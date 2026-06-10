@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600&display=swap');
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -40,7 +40,7 @@ nav {
 }
 
 .nav-logo {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 22px;
   letter-spacing: 0.08em;
   color: var(--black);
@@ -136,10 +136,11 @@ section { padding: 80px 48px; }
 }
 
 .hero-title {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(80px, 14vw, 200px);
+  font-family: Anton, sans-serif;
+  font-size: 13.5vw;
   line-height: 0.9;
   letter-spacing: -0.01em;
+  white-space: nowrap;
   margin-bottom: 48px;
 }
 
@@ -164,7 +165,7 @@ section { padding: 80px 48px; }
 }
 
 .hero-year {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 11px;
   letter-spacing: 0.2em;
   color: var(--mid);
@@ -197,7 +198,7 @@ section { padding: 80px 48px; }
 }
 
 .vision-text {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: clamp(28px, 4vw, 52px);
   line-height: 1.15;
   letter-spacing: 0.02em;
@@ -225,7 +226,7 @@ section { padding: 80px 48px; }
 }
 
 .marquee-track span {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 13px;
   letter-spacing: 0.2em;
   color: var(--white);
@@ -247,7 +248,7 @@ section { padding: 80px 48px; }
 }
 
 .section-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 40px;
   letter-spacing: 0.04em;
 }
@@ -330,7 +331,7 @@ section { padding: 80px 48px; }
 }
 
 .film-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 28px;
   letter-spacing: 0.05em;
   color: var(--white);
@@ -361,7 +362,7 @@ section { padding: 80px 48px; }
 }
 
 .page-hero-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: clamp(60px, 10vw, 140px);
   line-height: 0.9;
   letter-spacing: 0.01em;
@@ -434,7 +435,7 @@ section { padding: 80px 48px; }
 }
 
 .about-statement {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: clamp(24px, 3vw, 40px);
   line-height: 1.2;
   letter-spacing: 0.03em;
@@ -470,7 +471,7 @@ section { padding: 80px 48px; }
 }
 
 .about-value-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 22px;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
@@ -509,14 +510,14 @@ section { padding: 80px 48px; }
 }
 
 .flow-step-num {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 48px;
   color: var(--border);
   line-height: 1;
 }
 
 .flow-step-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 28px;
   letter-spacing: 0.04em;
   margin-bottom: 12px;
@@ -544,7 +545,7 @@ section { padding: 80px 48px; }
 }
 
 .contact-big {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: clamp(50px, 7vw, 100px);
   line-height: 0.95;
   letter-spacing: 0.01em;
@@ -586,7 +587,7 @@ section { padding: 80px 48px; }
 }
 
 .contact-form-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 32px;
   letter-spacing: 0.04em;
   margin-bottom: 40px;
@@ -685,7 +686,7 @@ section { padding: 80px 48px; }
 }
 
 .newsletter-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: clamp(60px, 10vw, 130px);
   line-height: 0.9;
   margin-bottom: 40px;
@@ -726,7 +727,7 @@ section { padding: 80px 48px; }
 }
 
 .newsletter-perk-title {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 20px;
   letter-spacing: 0.05em;
   margin-bottom: 8px;
@@ -748,7 +749,7 @@ footer {
 }
 
 .footer-logo {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: Anton, sans-serif;
   font-size: 18px;
   letter-spacing: 0.08em;
   color: var(--black);
