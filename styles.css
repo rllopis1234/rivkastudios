@@ -150,10 +150,10 @@ section { padding: 80px 48px; }
 }
 
 .hero-tagline {
-  max-width: 480px;
   font-size: 14px;
   line-height: 1.8;
   color: var(--mid);
+  white-space: nowrap;
 }
 
 .hero-tagline em {
