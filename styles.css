@@ -210,8 +210,7 @@ section { padding: 80px 48px; }
 }
 
 .vision-text em {
-  font-style: normal;
-  border-bottom: 2px solid var(--black);
+  font-style: italic;
 }
 
 /* ─── MARQUEE ─── */
