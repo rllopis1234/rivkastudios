@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter — Rivka Studios</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">Rivka Studios</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="films.html">Films</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="flow.html">Flow</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="newsletter.html" class="active">Newsletter</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <a href="films.html">Films</a>
+  <a href="about.html">About</a>
+  <a href="flow.html">Flow</a>
+  <a href="contact.html">Contact</a>
+  <a href="newsletter.html">Newsletter</a>
+</div>
+
+<main style="padding-top: var(--nav-h); border-bottom: 1px solid var(--border);">
+
+  <div style="display: grid; grid-template-columns: 1fr 1fr; min-height: calc(100vh - var(--nav-h));">
+
+    <!-- LEFT -->
+    <div style="padding: 80px 48px; border-right: 1px solid var(--border); display: flex; flex-direction: column; justify-content: center;">
+
+      <p style="font-size:10px; font-weight:500; letter-spacing:0.25em; text-transform:uppercase; color:var(--mid); margin-bottom:32px;">Stay In The Loop</p>
+
+      <h1 class="newsletter-title">THE<br>RIVKA<br>LETTER</h1>
+
+      <p class="newsletter-sub">
+        Film announcements, behind-the-scenes dispatches, and the occasional essay on cinema, storytelling, and the freedom to choose. Sent when it matters.
+      </p>
+
+      <form class="newsletter-form" onsubmit="handleSignup(event)">
+        <input type="email" class="form-input" placeholder="your@email.com" required style="border:1px solid var(--border); border-right:none; padding:14px 20px;" />
+        <button type="submit" class="btn">Subscribe &rarr;</button>
+      </form>
+      <p class="form-success" id="signupSuccess" style="margin-top:16px;">You&rsquo;re in. Welcome to Rivka Studios.</p>
+
+      <p style="font-size:11px; color:var(--mid); margin-top:20px;">No spam. Unsubscribe anytime.</p>
+
+    </div>
+
+    <!-- RIGHT -->
+    <div style="padding: 80px 48px; display: flex; flex-direction: column; justify-content: space-between;">
+
+      <div>
+        <p style="font-size:10px; font-weight:500; letter-spacing:0.25em; text-transform:uppercase; color:var(--mid); margin-bottom:40px;">What You&rsquo;ll Get</p>
+
+        <div style="border-top: 1px solid var(--border);">
+          <div style="padding: 32px 0; border-bottom: 1px solid var(--border);">
+            <h3 style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; margin-bottom:8px;">Film Announcements</h3>
+            <p style="font-size:13px; line-height:1.7; color:#666;">Be the first to know when new projects are greenlit, trailers drop, and release dates are set.</p>
+          </div>
+          <div style="padding: 32px 0; border-bottom: 1px solid var(--border);">
+            <h3 style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; margin-bottom:8px;">Behind the Scenes</h3>
+            <p style="font-size:13px; line-height:1.7; color:#666;">Dispatches from production, conversations with our filmmakers, and the stories behind the stories.</p>
+          </div>
+          <div style="padding: 32px 0; border-bottom: 1px solid var(--border);">
+            <h3 style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; margin-bottom:8px;">The Timshel Dispatch</h3>
+            <p style="font-size:13px; line-height:1.7; color:#666;">Our occasional long-read on cinema, culture, and the choices that define great storytelling.</p>
+          </div>
+          <div style="padding: 32px 0;">
+            <h3 style="font-family:'Bebas Neue',sans-serif; font-size:22px; letter-spacing:0.05em; margin-bottom:8px;">Submission Windows</h3>
+            <p style="font-size:13px; line-height:1.7; color:#666;">Subscribers get advance notice of open submission periods and project development opportunities.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-top: 1px solid var(--border); padding-top: 32px;">
+        <p style="font-family:'Bebas Neue',sans-serif; font-size:clamp(28px,4vw,52px); letter-spacing:0.02em; line-height:1;">
+          Thou mayest.<br>Choose to stay close.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
+</main>
+
+<footer>
+  <a href="index.html" class="footer-logo">Rivka Studios</a>
+  <span class="footer-copy">&copy; 2026 Rivka Studios. All rights reserved.</span>
+  <ul class="footer-links">
+    <li><a href="films.html">Films</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="newsletter.html">Newsletter</a></li>
+  </ul>
+</footer>
+
+<script>
+function toggleMenu() {
+  document.getElementById('mobileMenu').classList.toggle('open');
+}
+
+function handleSignup(e) {
+  e.preventDefault();
+  const success = document.getElementById('signupSuccess');
+  success.style.display = 'block';
+  e.target.reset();
+}
+</script>
+
+<style>
+@media (max-width: 900px) {
+  main > div { grid-template-columns: 1fr !important; min-height: auto !important; }
+  main > div > div:first-child { border-right: none !important; border-bottom: 1px solid var(--border); }
+}
+</style>
+
+</body>
+</html>
