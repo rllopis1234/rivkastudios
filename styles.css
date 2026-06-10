@@ -40,11 +40,15 @@ nav {
 }
 
 .nav-logo {
-  font-family: Anton, sans-serif;
-  font-size: 22px;
-  letter-spacing: 0.08em;
-  color: var(--black);
+  display: flex;
+  align-items: center;
   text-decoration: none;
+}
+
+.nav-logo img {
+  height: 40px;
+  width: auto;
+  display: block;
 }
 
 .nav-links {
